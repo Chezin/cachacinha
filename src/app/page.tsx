@@ -1,26 +1,31 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from './page.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
+
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main className="aksjd">
      
-      <div className={styles.center}>
+      <div className="mt-10">
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
+          className="ml-"
+          src="/cachacinha.svg"
+          alt="cachacinha"
+          width={600}
+          height={600}
           priority
         />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
+        <Image
+        className="ml-"
+        src="/play.svg"
+        alt="play"
+        width={600}
+        height={600}
+        priority
+      />
       </div>
 </main>
-   )}
+  )}
 
